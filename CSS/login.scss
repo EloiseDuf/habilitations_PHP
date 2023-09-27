@@ -1,0 +1,48 @@
+$colorblue:#2a54db;
+$colorgreen:#89d22b;
+
+.formLogin{
+    width:500px;
+    height:300px;
+    border-radius: 8px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.524);
+    margin:150px;
+
+    .connectionInfo{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .labelInput{
+            label{
+                width:20px;
+                height: 20px;
+                text-align: start;
+            }
+        
+            input{
+                width:150px;
+                height: 20px;
+                border: 2px $colorblue solid;
+                margin:4px;
+            }
+        }
+    
+}
+
+    button{
+        width:150px;
+        height: 40px;
+        border-radius: 16px ;
+        background-color: white;
+        border: 2px $colorblue solid;
+        color:$colorblue;
+        margin:16px;
+    }
+
+}

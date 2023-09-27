@@ -1,0 +1,18 @@
+$colorblue:#2a54db;
+$colorgreen:#89d22b;
+
+nav{
+    width:1000px;
+    border-radius: 16px;
+    ul{
+        display: flex;
+        flex-direction: row;
+    
+    li{
+        list-style: none;
+        margin: 4px;
+        border-left: #89d22b 2px solid;
+        padding: 4px;
+    }
+}
+}

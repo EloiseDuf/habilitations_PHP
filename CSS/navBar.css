@@ -1,0 +1,14 @@
+nav {
+  width: 1000px;
+  border-radius: 16px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  list-style: none;
+  margin: 4px;
+  border-left: #89d22b 2px solid;
+  padding: 4px;
+}/*# sourceMappingURL=navBar.css.map */
