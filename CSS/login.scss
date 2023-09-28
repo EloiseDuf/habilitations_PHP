@@ -2,8 +2,8 @@ $colorblue:#2a54db;
 $colorgreen:#89d22b;
 
 .formLogin{
-    width:500px;
-    height:300px;
+    width:700px;
+    height:400px;
     border-radius: 8px;
     display:flex;
     justify-content: center;
@@ -12,22 +12,30 @@ $colorgreen:#89d22b;
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.524);
     margin:150px;
+    font-size: 2rem;
+
+    h1{
+        font-size:3rem;
+    }
 
     .connectionInfo{
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width:80%;
         .labelInput{
             label{
-                width:20px;
-                height: 20px;
-                text-align: start;
+                display: inline-block;
+                width:100px;
+                height: 30px;
+                margin-right:50px;
+                vertical-align: center;
             }
         
             input{
-                width:150px;
-                height: 20px;
+                width:200px;
+                height: 30px;
                 border: 2px $colorblue solid;
                 margin:4px;
             }
@@ -36,13 +44,14 @@ $colorgreen:#89d22b;
 }
 
     button{
-        width:150px;
-        height: 40px;
+        width:200px;
+        height: 50px;
         border-radius: 16px ;
         background-color: white;
         border: 2px $colorblue solid;
         color:$colorblue;
         margin:16px;
+        font-size: 1.3rem;
     }
 
 }

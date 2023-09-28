@@ -45,7 +45,7 @@ WHERE c.id=2; -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/navBar.css">
-    <link rel="stylesheet" href="./CSS/dashboard.css">
+    <link rel="stylesheet" href="./CSS/habilitationList.css">
 </head>
 <body class="bodyDashboard">
     <header>
@@ -54,15 +54,32 @@ WHERE c.id=2; -->
     <main class="dashboardContents">
         <section class="synthese">
             <div class="containerSynthese">
-                <p>Bonjour <?php echo $_SESSION['LOGGED_USER_FIRSTNAME'];?>
-                <br>vous détenez <?php echo $countHabilitations['nbHab']; ?> habilitation(s) 
+                <br>Vous détenez <?php echo $countHabilitations['nbHab']; ?> habilitation(s) 
                 </br> et vous avez <?php echo $countExpirations['nbExp'];?> habilitation(s) expirées</p>
             </div>
-            <div>
-                <img src="assets/bouclier.png" alt="logo bouclier">
+        </section>
+        <section class="board">
+            <div class="boardContent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Habilitation</th>
+                            <th>Date de formation</th>
+                            <th>Date de validité</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach($habilitations as $habilitation ): ?>
+                        <tr>
+                            <td><?php echo $habilitation['name']; ?> </td>
+                            <td><?php echo $habilitation['training_date']; ?> </td>
+                            <td><?php echo $habilitation['expiration_date']; ?> </td>
+                        </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
             </div>
         </section>
-
     </main>
 </body>
 </html>

@@ -11,8 +11,7 @@
 </head>
 <body>
     <header class="connectionPage">
-            <?php include('login.php'); ?>
-            
+            <?php include('login.php'); ?>        
     </header>  
 </body>
 </html>

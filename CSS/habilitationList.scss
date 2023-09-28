@@ -47,6 +47,24 @@ header{
         border-top:2px $colorblue solid ;
         border-bottom:2px $colorblue solid ;
         padding:8px;
-    }  
+    }
+
+    .board{
+        table{ 
+            border-collapse: collapse;
+            margin:24px;
+        td{
+            border:2px solid black;
+            text-align: center;
+            vertical-align: center;
+            padding:4px;
+        }
+
+        th{
+            padding:6px;
+        }
+    }
+
+    }
 }
 }
